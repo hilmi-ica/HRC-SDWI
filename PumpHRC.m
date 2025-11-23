@@ -216,7 +216,9 @@ for i = 1:length(t)
     xactprev = xact; xhatprev = xhat;
     xhatprev_samples = xhat_samples;
 
-    % Norm errors
+    % Estimation errors
+    exhat(:,i) = xact - xhat; exhat2(:,i) = xact - xhat2(1:3); 
+    ethat(:,i) = tact - that; ethat2(:,i) = tact - xhat2(4:end);
     nxhat(i) = norm(xact - xhat); nxhat2(i) = norm(xact - xhat2(1:3)); 
     nthat(i) = norm(tact - that); nthat2(i) = norm(tact - xhat2(4:end));
 
