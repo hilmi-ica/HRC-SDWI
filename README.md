@@ -1,6 +1,6 @@
 # Resilient Control on Subsea Seawater Injection System
 
-This repository contains simulations for faulted cascade pump on the subsea seawater injeciton system using proposed hierarchical resilient control (HRC) framework (supervisory RTO, stochastic offset-free NMPC, and nonlinear observer), supporting our submission to the SICE Festival 2026 with Annual Conference.
+This repository contains simulations for faulted cascade pump on the subsea seawater injeciton system using proposed hierarchical resilient (fault-tolerant) control (HRC) framework (supervisory RTO, stochastic offset-free NMPC, and nonlinear observer), supporting our submission to the SICE Festival 2026 with Annual Conference.
 
 ## Purpose
 
