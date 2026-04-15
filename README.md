@@ -1,6 +1,6 @@
 # Resilient Control on Subsea Seawater Injection System
 
-This repository contains simulations for faulted cascade pump on the subsea seawater injeciton system using proposed hierarchical resilient control (HRC) framework (supervisory RTO, stochastic offset-free NMPC, and nonlinear observer), supporting our submission to the IFAC World Congress.
+This repository contains simulations for faulted cascade pump on the subsea seawater injeciton system using proposed hierarchical resilient control (HRC) framework (supervisory RTO, stochastic offset-free NMPC, and nonlinear observer), supporting our submission to the SICE Festival 2026 with Annual Conference.
 
 ## Purpose
 
@@ -17,6 +17,6 @@ Sharing MATLAB code and data for reproducing results and facilitating review.
 * [YALMIP: A Toolbox for Modeling and Optimization in MATLAB](https://yalmip.github.io)
 * [Gurobi Optimization](https://www.gurobi.com)
 
-## IFAC World Congress
+## SICE Festival 2026 with Annual Conference
 
 This repository directly supports data and code for our paper submission.
