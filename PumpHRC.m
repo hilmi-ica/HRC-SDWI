@@ -1,4 +1,4 @@
-% PumpHRC.m for IFAC WC
+% PumpHRC.m for SICE FES
 % by Muhammad Hilmi, ITK NTNU
 % at 23-11-2025
 
@@ -61,7 +61,7 @@ for k = 1:Ns
     p_npsh = rho * g * (h_npsh + hm) * 1e-5; dp = rm * qd + fp;
     cons = [cons, p_npsh - (x_s(1,k) - dp) <= eps_p(k)];
     cons = [cons, x_s(3,k) - qd/2 <= eps_q(k)];
-    cons = [cons, eps_p(k) >= 0]; cons = [cons, eps_q(k) >= 0];
+    cons = [cons, eps_p(k) == 0]; cons = [cons, eps_q(k) == 0];
 
     % State and input constraints
     cons = [cons, xmin <= x_s(:,k) <= xmax];
@@ -180,7 +180,7 @@ for i = 1:length(t)
     fhat2 = cascade(xhat2, uact, pf(i), qf(i));
     xhat2 = fhat2 + Pa * xhat2 * dt + inv(Ja) * Ha' * (yact - Ca * xhat2) * dt;
 
-    % Monte-Carlo uncertainty propagation
+    % Uncertainty propagation
     for s = 1:Nq
         vs = -1 + 2 * sum(rand(3,100),2) / 100; ws = vs;
         xs = fact + Phi * tact * dt + vs * dt;
